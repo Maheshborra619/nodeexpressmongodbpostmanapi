@@ -15,7 +15,7 @@ const connection = mongoose.connection
 
 //middleware
 app.use(express.json());
-app.use('/mahesh',employee);
+app.use('/',employee);
 
 
 
