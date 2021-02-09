@@ -15,7 +15,7 @@ const connection = mongoose.connection
 
 //middleware
 app.use(express.json());
-app.use('/',employee);
+app.use('/mahesh',employee);
 
 
 
@@ -23,7 +23,9 @@ connection.on('open',()=>{
     console.log("mongodb connecetd")
 })
 
-app.listen(8000,()=>{
+const PORT = 8000;
+
+app.listen(PORT,()=>{
     console.log("server is listening at piort==8000")
 })
   
